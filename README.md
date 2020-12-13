@@ -7,4 +7,12 @@
 ```
 mvn clean test
 ```
+или
+```
+mvn clean test -DsuiteXMLFile=src/test/resources/testng.xml
+```
+После выполнения тестов для формирования отчета следует выполнить следующую команду:
+```
+allure serve build/allure-results
+```
 *Внимание*: Перед запуском тестов убедитесь, что на вашей АРМ установлен Google Chrome
